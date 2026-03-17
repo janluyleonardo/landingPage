@@ -1,0 +1,251 @@
+/******************* Estilo que se aplican para pantallas pequeñas y/o movil ******************************/
+@media only screen and (max-width: 1080px ) and (min-height: 100px ){
+    html{
+        max-width: 99% !Important; max-height: 100% !Important;
+    }
+    ::-webkit-scrollbar{
+        display:none;/*este estilo es encargado de ocultar la barra scroll en la web dentro del navegador*/
+    }
+    body{
+        max-width: 99% !Important; max-height: 100% !Important;
+        font-family: "MyriadPro-Regular","MyriadPro-Bold","MyriadPro-Light","MyriadPro-SemiCn_0","MyriadPro-It" !Important;
+        background-image: url("../IMG/fondoBlanco2.jpg") !important;
+        background-size: 100% 100% !Important;/*Este se utiliza si es una image o foto para que quede en el fondo completo*/
+    }
+    div.centrado{
+        background-color: rgba(0, 0, 0, 0);
+        margin-left: auto !Important;
+        margin-right: auto !Important;
+        width: 99% !Important; height: 500px
+    }
+    /*-------------- estilos aplicados al div interno que maneja las notificaciones de registro -------------------------*/
+    .msn-ok{
+        position:absolute; z-index: 25 !Important; color: rgb(112, 111, 111); padding: 10px;
+        text-align: center; width: 250px; height: 90px; border-radius: 100px; margin-left: 15% !Important; margin-top: 117%!Important;
+        border: 1px solid rgb(0, 172, 169); box-shadow: 0px 0px 5px 5px rgba(255,255,255,1) !Important;
+    }
+    .msn-ko {
+        position:absolute; z-index: 25 !Important; color: rgb(0, 0, 0); padding: 10px;
+        text-align: center; width: 250px; height: 90px; border-radius: 100px; margin-left: 15% !Important; margin-top: 117%!Important;
+        border: 1px solid rgb(0, 172, 169); box-shadow: 0px 0px 5px 5px rgba(252, 192, 58, 1) !Important;
+    }
+    
+/*////////////// fin de estilos aplicados al div interno que maneja las notificaciones de registro //////////////////*/
+    div.verde{
+         /*Este se utiliza si es una image o foto para que quede en el fondo completo*/
+        background-color:rgba(0, 172, 169, 1); width: 100% !Important; height: 1000px !Important;
+    }
+    div.compromiso{
+        background-color:rgba(255, 255, 255, 0.3); 
+        height: 100% !Important;
+        width: 100% !Important;
+        margin-left: 0% !Important;
+        color: rgba(255, 255, 255, 1);
+        height: 500px !Important;
+        float: left !Important;
+    }
+    div.derecho{
+        background-color:transparent !Important;
+        height: 500px !Important;
+        width: 100% !Important;
+        margin-right: 0px !Important;
+        float: right !Important;
+    }
+    div.tituloBanner{/*div naranja*/
+        top: -10px !Important;
+        background-color: rgb(252, 192, 58) !Important;
+        position: relative;
+        display: block;
+        clear: both;
+        z-index: 1 !Important;
+        margin: 0 5% 0 5%;
+        width: 90%;
+        height: 40px;
+        border-radius: 100px;
+    }
+    div.textoTitulo{/*div gris de titulo*/
+        width: 90% !Important;
+        content: "";
+        height: 70px;
+        margin: 0 5% 0 5%;
+        background-color: rgb(242, 243, 244) !Important;
+        position: absolute;
+        font-size: 16px !Important;
+        z-index: 2 !Important;
+        top: -15px !Important;
+        border-radius: 100px !Important;
+        text-align: center !Important;
+        color: rgba(0, 172, 169, 1) !Important;
+    }
+    div.bannerImagenesGeneral{
+        display: block !Important;
+        width: 100% !Important;
+        margin: 0 0 0 0;
+        background-color: rgba(0, 0, 0, 0) !Important;
+        height: 500px !Important;
+    }
+    div.bannerImagenesUno{
+        width: 100% !Important;
+        margin-right:0% !Important;
+        background-color: rgb(0, 172, 169) !Important;
+    }
+    div.bannerImagenesDos{
+        width: 100% !Important;
+        margin-right: 0% !Important;
+        background-color: rgb(0, 172, 169) !Important;
+    }
+    div.bannerImagenesTres{
+        width: 100% !Important;
+        margin-right: 0% !Important;
+        background-color: rgb(0, 172, 169) !Important;
+    }
+    ul{
+        width: 318px !Important;
+        margin-left: -14px !important;
+        background-color:rgba(0, 0, 0, 0);
+    }
+    li {/*estilos aplicados al letrero de mas informacio*/
+        background-color:rgba(0, 0, 0, 0);
+        text-align: center !Important;
+        margin-left: -42px !important;
+        width: 320px !Important;
+        /*list-style: none;*/
+        font-size:18px;
+    }
+    #imagenes{
+        width: 100% !Important;
+        height: 60% !Important;
+    }
+    div.grismovil{
+        margin: 55px 0 55px 0;
+        background-color: #DADADA !Important;
+        width: 100% !Important;
+        height: 20px !Important;
+    }
+    div.estadisticas{
+        /*background-image: url("../IMG/fondoBlanco1.jpg") !important;*/
+        background-color: transparent!Important;
+        margin-top: 1070px;
+        width: 100% !Important;
+        height: 780px !Important;
+        margin-left:0% !Important;
+    }
+    div.datosEstadisteicasGeneral{
+        width: 100% !Important;
+        height: 105px;
+        margin: 50px 0 0 0;
+        background-color: rgba(0, 0, 0, 0) !Important;
+    }
+    div.videoEstadisticas{
+        width: 100% !Important;
+        height: 232px;
+        margin: 15px 0 0 0;
+        background-color: rgba(0, 0, 0, 0.5) !Important;
+    }
+    div.acerca{
+        background-color: transparent !Important;
+        width: 100% !Important;
+        height: 600px !Important;
+        margin-left:0% !Important;
+    }
+    table.acercaIdime{
+        width: 100% !Important;
+        text-align: center !Important;
+        font-size: 26px !Important;
+        margin-top: 25px !Important;
+        color:rgb(112, 111, 111);
+    }
+    div.centradoAcerca{
+        background-color: rgba(0, 0, 0, 0);
+        margin-left: auto !Important;
+        margin-right: auto !Important;
+        width: 100% !Important; height: 275px
+    }
+    div.footer{
+        width: 100% !Important;
+        height: 180px !Important;
+        background-color: rgba(0, 0, 0, 0.5) !Important;
+
+    }
+    div.centradofooter{
+        background-color: rgb(242, 243, 244);
+        margin-left: auto !Important;
+        margin-right: auto !Important;
+        width: 100% !Important; height: 50px;
+        color: rgba(0, 172, 169, 1) !Important;
+        font-size: 16px !Important;
+        text-align: center !Important;
+    }
+    div.checks{
+    /*background: rgba(255, 239, 216, 1);*/
+        width: 100%;
+        margin-left: 5% !Important;
+        margin-right: 5% !Important;
+        margin-bottom: 1% !Important;
+    }
+    /* los checkboxes */
+    #c1 input:checked ~ .checkmark {
+        background-color: rgba(255, 255, 255, 1) !Important;
+        border:solid 1px rgba(252, 192, 58, 1) !Important;
+    }
+    #c2 input:checked ~ .checkmark {
+        background-color: rgba(255, 255, 255, 1) !Important;
+        border:solid 1px rgba(252, 192, 58, 1) !Important;
+    }
+    /* Contenedor */
+    .container {
+        display: flex;
+        position: relative;
+        padding-left: 35px;    /*este es el espacio entre el check y el texto*/
+        /*margin-bottom: 12px;*/
+        cursor: pointer;
+        font-size: 10px;
+    }
+    /* escondemos el default checkbox */
+    .container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0px;
+        width: 0px;
+    }
+    /* creamos un checkbox personalizado es el cuadro naranja*/
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 15px;
+        width: 15px;
+        background-color: rgba(255, 255, 255, 1) !Important;
+        border:solid 1px rgba(252, 192, 58, 1) !Important;
+    }
+    /* Al pasar el mouse encima, lo ponemos en color */
+    .container:hover input ~ .checkmark {
+        background-color: rgba(252, 192, 58, 1) !Important;
+        border:solid 1px rgba(252, 192, 58, 1) !Important;
+    }
+    /* creamos el marcador (escondido al no seleccionar) */
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    /* mostramos el marcador al seleccionar */
+    .container input:checked ~ .checkmark:after {
+        display: block;
+        top: 0px;
+        left: 2px;
+    }
+    /* estilo del marcador cuando se selecciona el check tamaño y ubicacion del chak interno (chulito)*/
+    .container .checkmark:after {
+        left: 9px;
+        top: 1px;
+        width: 10px;
+        height: 15px;
+        border: solid orange;
+        border-width: 0 4px 4px 0;/*grueso de chuliyto*/
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}

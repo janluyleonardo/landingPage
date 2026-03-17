@@ -1,0 +1,9 @@
+Options -Indexes
+#RewriteEngine On
+#RewriteCond %{ENV:HTTPS} !ON [NC]
+#RewriteCond %{SERVER_PORT} 80
+#RewriteRule ^(.*)$ https://www.entregaresultados.net/WebsiteResultados/$1 [R=301,L,NE]
+php_value error_reporting 2
+php_flag display_errors On
+
+  

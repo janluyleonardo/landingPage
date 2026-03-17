@@ -1,0 +1,689 @@
+
+body{
+/*    background-image: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 0, 255) 85%); esto le da un degradado al fondo de la pagina*/
+    font-family: "MyriadPro-Regular","MyriadPro-Bold","MyriadPro-Light","MyriadPro-SemiCn_0","MyriadPro-It" !Important;
+    background-attachment: fixed; background-color:rgba(132, 132, 132, 1); background-image: url("../IMG/fondoBlanco2.jpg") !important;
+    background-size: 100% 100% ;  /*Este se utiliza si es una image o foto para que quede en el fondo completo*/
+}
+::-webkit-scrollbar{
+    display:none;/*este estilo es encargado de ocultar la barra scroll en la web dentro del navegador*/
+}
+div.centrado{
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: auto !Important;
+    margin-right: auto !Important;
+    width: 1440px !Important; height: 500px
+}
+/*-------------- estilos aplicados al div interno que maneja las notificaciones de registro -------------------------*/
+.msn-ok{
+    position:absolute; z-index: 25 !Important; color: rgb(112, 111, 111); padding: 10px;
+    text-align: center; width: 250px; height: 90px; border-radius: 100px; margin-left: 80%!Important; margin-top: 22.5%!Important;
+    border: 1px solid rgb(0, 172, 169); box-shadow: 0px 0px 5px 5px rgba(255,255,255,1) !Important;
+}
+.msn-ko {
+    position:absolute; z-index: 25 !Important; color: rgb(0, 0, 0); padding: 10px;
+    text-align: center; width: 250px; height: 90px; border-radius: 100px; margin-left: 80%!Important; margin-top: 22.5%!Important;
+    border: 1px solid rgb(0, 172, 169); box-shadow: 0px 0px 5px 5px rgba(252, 192, 58, 1) !Important;
+}
+.msn-ok {
+    background-color: rgba(255, 255, 255, 1);
+}
+.msn-ko {
+    background: rgba(252, 192, 58, 1) !Important;
+}
+table.alerta{
+    text-align: center !Important;
+}
+td.bordeAlertaOK{
+    border-bottom: 2px solid rgb(252, 192, 58) !Important;
+}
+td.bordeAlertaKO{
+    border-bottom: 2px solid rgb(255, 255, 255) !Important;
+}
+span.cerrar{
+    position:absolute; top:-10px; right:20px; max-width: 10px !Important; max-height: 10px !Important;
+}
+/*////////////// fin de estilos aplicados al div interno que maneja las notificaciones de registro //////////////////*/
+/*------------------------estilos aplicados al div inicial llamado verde---------------------------------------------*/
+div.verde{
+    background-image: url("../IMG/fondoVerde.jpg") !important; background-size: 100% 100% ;  /*Este se utiliza si es una image o foto para que quede en el fondo completo*/
+    background-color:rgba(0, 172, 169, 1); width: 100% !Important; height: 500px !Important;
+}
+div.compromiso{
+    background-color:rgba(255, 255, 255, 0.3); height: 100% !Important;
+    width: 350px !Important;
+    margin-left: 20% !Important;
+    color: rgba(255, 255, 255, 1);
+    height: 500px !Important;
+    float: left !Important;
+}
+#imgCompromiso{
+    height: 17% !Important;
+    width: 55% !Important;
+    margin-left: 22.5% !Important;
+    margin-right: 22.5% !Important;
+    margin-top: 30px !Important;
+}
+div.previene{
+    background-color:rgba(252, 192, 58, 1);
+    border-radius: 25px !Important;
+    width: 70% !Important;
+    margin:auto !Important;
+}
+table.pruebas{
+    width: 40% !Important;
+    margin-left: 30% !Important;
+    margin-right: 30% !Important;
+    text-align: center !Important;
+}
+td.borde{
+    border-bottom: 1px solid #ffffff !Important;
+}
+div.domicilio{
+    background-color:rgba(252, 255, 255, 1);
+    border-radius: 25px !Important;
+    width: 60% !Important;
+    margin:auto !Important;
+    color: rgba(0, 172, 169, 1) !Important;;
+}
+div.derecho{
+    background-color:transparent !Important;
+    height: 500px !Important;
+    width: 380px !Important;
+    margin-right: 300px !Important;
+    float: right !Important;
+}
+div.formulario{
+    background-color:rgba(255, 255, 255, 1);
+    height: 97% !Important;
+    width: 80% !Important;
+    margin-top : 1.5% !Important;
+    margin-bottom: 1.5% !Important;
+    margin-left: 10% !Important;
+    margin-right: 10% !Important;
+    border: 8px solid rgba(135, 135, 135, 0.4) !Important;
+    border-radius: 20px !Important;
+}
+a:link {
+    color: black !Important;
+    text-decoration: none !Important;
+    font-size: 10px;
+}
+a:visited {
+    color:#000000 !Important;
+}
+a:active {
+    color:black !Important;
+    opacity: 0.1;
+}
+a:hover {
+    color: orange !Important;
+    text-decoration: none !Important;
+}
+a:before {
+    color:#000000 !Important;
+    text-decoration: none !Important;
+}
+div.encabezado{
+    display:flex !Important;
+    margin-top : 5% !Important;
+}
+div.tituloleft {/*estilos que se aplican a div negro n la separacion*/
+    background-color: rgb(252, 192, 58) !Important;
+    position: relative;
+    display: block;
+    clear: both;
+    /*margin: 10px 0 0px 0;*/
+    width: 10%;
+    height: 12px;
+    /*border-top: 1px solid;*/
+}
+div.tituloleft:before {/*estilos que se aplican a div naranja n la separacion*/
+    width: 110% !Important;
+    content: "";
+    height: 5px;
+    background: #00aba8;
+    position: absolute;
+    z-index: 0;
+    top: 3px;
+    border-radius: 25px;
+}
+div.tituloCenter{
+    background-color: rgba(255, 255, 255, 1);
+    width: 80% !Important;
+    text-align: center !Important;
+    font-size: 18pt !Important;
+    margin-top: -4% !Important;
+    color: rgba(252, 192, 58, 1);
+}
+div.tituloright {/*estilos que se aplican a div negro n la separacion*/
+    background-color: rgb(252, 192, 58) !Important;
+    position: relative;
+    display: block;
+    clear: both;
+    float: right !Important;
+    /*margin: 10px 0 0px 0;*/
+    width: 10%;
+    height: 12px
+    /*border-top: 1px solid;*/
+}
+div.tituloright:before {/*estilos que se aplican a div naranja n la separacion*/
+    width: 110% !Important;
+    content: "";
+    height: 5px;
+    background: #00aba8;
+    position: absolute;
+    z-index: 0;
+    top: 3px;
+    left: -10% !Important;
+    border-radius: 25px;
+}
+div.botonFormulario{
+    background-color: #00aba8 !Important;
+    position: relative;
+    display: block;
+    clear: both;
+    margin: 30px 30% 0 30%;
+    width: 40%;
+    height: 15px;
+    border-radius: 25px;
+}
+#btnFormulario{
+    width: 85% !Important;
+    height: 25px;
+    margin: 0 7.5% 0 7.5%;
+    position: absolute;
+    z-index: 1;
+    border-radius: 25px;
+    top: -5px;  
+    outline: none;
+}
+/*///////////////////////fin de estilos aplicados al div inicial llamado verde/////////////////////////////////*/
+/*---------------- estilos aplicados al div lamado banner donde estan las imagenes ----------------------------*/
+div.banner{
+    background-image: url("../IMG/fondoBlanco1.jpg") !important;
+    width: 100% !Important;
+    height: 740px !Important;
+}
+div.gris{
+    margin: 55px 0 55px 0;
+    background-color: #DADADA !Important;
+    width: 100% !Important;
+    height: 20px !Important;
+}
+div.tituloBanner{
+    top: -10px !Important;
+    background-color: rgb(252, 192, 58) !Important;
+    position: relative;
+    display: block;
+    clear: both;
+    z-index: 1 !Important;
+    margin: 0 30% 0 30%;
+    width: 40%;
+    height: 40px;
+    border-radius: 100px;
+}
+div.textoTitulo{
+    width: 95% !Important;
+    content: "";
+    height: 70px;
+    margin: 0 2.5% 0 2.5%;
+    background-color: rgb(242, 243, 244) !Important;
+    position: absolute;
+    font-size: 26px !Important;
+    z-index: 2 !Important;
+    top: -15px !Important;
+    border-radius: 100px !Important;
+    text-align: center !Important;
+    color: rgba(0, 172, 169, 1) !Important;
+}
+div.bannerImagenesGeneral{
+    display: felx !Important;
+    width: 70% !Important;
+    height: 350px;
+    margin: 50px 15% 0 15%;
+    background-color: rgba(0, 0, 0, 0) !Important;
+}
+div.bannerImagenesUno{
+    width: 290px !Important;
+    height: 100%;
+    float:left !Important;
+    margin-right:6.5% !Important;
+    background-color: rgb(0, 172, 169) !Important;
+}
+div.bannerImagenesDos{
+    width: 290px!Important;
+    height: 100%;
+    float:left !Important;
+    margin-right: 6.5% !Important;
+    background-color: rgb(0, 172, 169) !Important;
+}
+div.bannerImagenesTres{
+    width: 290px!Important;
+    height: 100%;
+    float:right !Important;
+    background-color: rgb(0, 172, 169) !Important;
+}
+#imagenes{
+    width: 100% !Important;
+    height: 60% !Important;
+}
+div.estudios{
+    top: 30px !Important;
+    background-color: rgba(255, 255, 255, 1) !Important;
+    position: relative;
+    display: block;
+    clear: both;
+    z-index: 1 !Important;
+    margin: 0 5% 0 5%;
+    width: 90%;
+    height: 20px;
+    border-radius: 100px;
+}
+div.estudiosTitulo{
+    width: 90% !Important;
+    content: "";
+    height: 40px;
+    margin: 0 5% 0 5%;
+    background-color: rgb(252, 192, 58) !Important;
+    position: absolute;
+    font-size: 26px !Important;
+    z-index: 2 !Important;
+    top: -10px !Important;
+    border-radius: 100px !Important;
+    text-align: center !Important;
+    color: rgba(255, 255, 255, 1) !Important;
+}    
+.primero,.segundo{ /*estilos que se aplican al banner desplegable oculto*/
+    display:none; 
+    padding:5px; 
+    border:0px solid #ccc; 
+    background-color:rgba(230, 231, 233, 1); 
+    position:relative; 
+    width:100% !Important; 
+    height:100% !Important;
+}
+#segundo { 
+    position:absolute; 
+    top:100px; 
+}
+#primero{
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer !Important;
+}
+/* Al pasar el mouse por encima del div mostramos el div con la clase ".primero". Esta clase, tiene que estar dentro del id "primero" para que pueda funcionar */
+#primero:hover .primero { 
+    display:block; 
+    color: rgba(112, 111, 111, 1);
+    font-size:11px;
+    margin-bottom: 50px !Important;
+}
+#segundo:hover .segundo { 
+    display:block; 
+}
+ul{
+    width: 247.5px !Important;
+    margin-left: -13px !important;
+    background-color:rgba(0, 0, 0, 0);
+}
+li {/*estilos aplicados al letrero de mas informacio*/
+    background-color:rgba(0, 0, 0, 0);
+    text-align: center !Important;
+    margin-left: -42px !important;
+    width: 140% !Important;
+    list-style: none;
+    font-size:18px
+}
+div.desplegableTitulo{
+    background-color:rgba(252, 192, 58, 1);
+    width: 50% !Important;
+    margin-top: 20px !Important;
+    margin-left:-2% !Important;
+    border-top-right-radius: 25px !Important;; 
+    border-bottom-right-radius: 25px !Important;
+    color:rgba(255, 255, 255, 1) !Important;
+    z-index: 4 !Important;
+}
+div.desplegableContenido{
+    text-align: left !Important;
+    margin-left:10% !Important;
+    height:75px !Important;
+    z-index: 4 !Important;
+}
+div.footerBanerImagenes{
+    width: 100% !Important;
+    height:70px !Important;
+    margin-top: -20px !Important;
+}
+div.pieBanerImagenes{
+    width: 103.5% !Important;
+    height:50% !Important;
+    background-color:rgba(0, 172, 169, 1);
+    margin-left:-2% !Important;
+    color:rgba(255, 255, 255, 1) !Important;
+    font-size:24px
+}
+div.pieBanerImagenesGris{
+    width: 103.5% !Important;
+    height: 50% !Important;
+    background-color:rgba(112, 111, 111, 1);
+    margin-left:-2% !Important;
+    color:rgba(255, 255, 255, 1) !Important;
+    font-size:12px
+}
+/*////////////////////////fin de estilos aplicados al div lamado banner donde estan las imagenes/////////////////////////////*/
+/*----------------------------- estilos aplicados a el div estadisticas ---------------------------------------------------- */
+div.estadisticas{
+    /*background-image: url("../IMG/fondoBlanco1.jpg") !important;*/
+    background-color: transparent !Important;
+    width: 100% !Important;
+    height: 600px !Important;
+    margin-left:0% !Important;
+}
+div.grisEstadisticas{
+    margin: 40px 0 40px 0;
+    background-color: #DADADA !Important;
+    width: 100% !Important;
+    height: 20px !Important;
+    z-index: 0 !Important;
+}
+div.tituloBannerEstadisticas{
+    top: -10px !Important;
+    background-color: rgb(252, 192, 58) !Important;
+    position: relative;
+    display: block;
+    clear: both;
+    z-index: 1 !Important;
+    margin: 0 30% 0 30%;
+    width: 40%;
+    height: 40px;
+    border-radius: 100px;
+}
+div.textoTituloEstadisticas{
+    width: 95% !Important;
+    content: "";
+    height: 50px;
+    margin: 0 2.5% 0 2.5%;
+    background-color: rgb(242, 243, 244) !Important;
+    position: absolute;
+    font-size: 26px !Important;
+    z-index: 2 !Important;
+    top: -5px !Important;
+    border-radius: 100px !Important;
+    text-align: center !Important;
+    color: rgba(0, 172, 169, 1) !Important;
+}
+div.datosEstadisteicasGeneral{
+    display: felx !Important;
+    width: 70% !Important;
+    height: 105px;
+    margin: 50px 15% 0 15%;
+    background-color: rgba(0, 0, 0, 0) !Important;
+}
+div.tituloDatos{
+    top: 10px !Important;
+    background-color: rgb(0, 172, 169) !Important;
+    position: relative;
+    display: block;
+    clear: both;
+    z-index: 1 !Important;
+    margin: 0 30% 0 30%;
+    width: 40%;
+    height: 20px;
+    border-radius: 100px
+}
+div.textoDatos{
+    width: 90% !Important;
+    content: "";
+    height: 34px;
+    margin: 0 5% 0 5%;
+    background-color: rgb(252, 192, 58) !Important;
+    position: absolute;
+    font-size: 26px !Important;
+    z-index: 2 !Important;
+    top: -7px !Important;
+    border-radius: 100px !Important;
+    text-align: center !Important;
+    color: rgba(255, 255, 255, 1) !Important;
+}
+div.datoPCR{
+    background-color:rgba(230, 231, 233, 1);
+    width: 100% !Important;
+    height: 135px !Important;
+    color: rgb(0, 172, 169);
+    font-size: 22px;
+    text-align: center !Important;
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.1) !Important;
+}
+div.datoAntigenos{
+    background-color:rgba(230, 231, 233, 1);
+    width: 100% !Important;
+    height: 135px !Important;
+    color: rgb(0, 172, 169);
+    font-size: 22px;
+    text-align: center !Important;
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.1) !Important;
+}
+div.Anticuerpos{
+    background-color:rgba(230, 231, 233, 1);
+    width: 100% !Important;
+    height: 135px !Important;
+    color: rgb(0, 172, 169);
+    font-size: 22px;
+    text-align: center !Important;
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.1) !Important;
+}
+div.videoEstadisticas{
+    width: 50% !Important;
+    height: 300px;
+    margin: 50px 25% 0 25%;
+    background-color: rgba(0, 0, 0, 0.5) !Important;
+}
+#videoLoop{
+    width: 100% !Important;
+    height: 100% !Important;
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.2) !Important;
+}
+/*////////////////////////// fin de estilos aplicados a el div estadisticas /////////////////////////////////////////////////*/
+/*--------------------------------- estilos aplicados a el div acerca -------------------------------------------------------*/
+div.acerca{
+    background-color: transparent !Important;
+    width: 100% !Important;
+    height: 345px !Important;
+    margin-left:0% !Important;
+}
+table.acercaIdime{
+    width: 100% !Important;
+    text-align: center !Important;
+    font-size: 26px !Important;
+    margin-top: 0px !Important;
+    color:rgb(112, 111, 111);
+}
+div.centradoAcerca{
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: auto !Important;
+    margin-right: auto !Important;
+    width: 1440px !Important; height: 275px
+}
+/*///////////////////////////////// estilos aplicados a el div acerca ///////////////////////////////////////////////////////*/
+/*--------------------------------- estilos aplicados a el div footer -------------------------------------------------------*/
+div.footer{
+    width: 100% !Important;
+    height: 180px !Important;
+    background-color: rgba(0, 0, 0, 0.5) !Important;
+}
+div.centradoTextofooter{
+    background-color: rgb(242, 243, 244);
+    margin-left: auto !Important;
+    margin-right: auto !Important;
+    width: 1440px !Important; height: 50px;
+    color: rgba(0, 172, 169, 1) !Important;
+    font-size: 26px !Important;
+    text-align: center !Important;
+}
+td.bordeFooter{
+    border-bottom: 1.5px solid rgb(112, 111, 111) !Important;
+}
+div.imagenCentroFooter{
+    background-color: rgb(132, 132, 132);
+    margin-left: auto !Important;
+    margin-right: auto !Important;
+    width: 1440px !Important; height: 50px;
+}
+/*///////////////////////////// fin de estilos aplicados a el div footer ////////////////////////////////////////////////////*/
+/*------------------------------------- estilos aplicados a los input generales ---------------------------------------------*/
+input[type='text']{
+    background: rgba(255, 239, 216, 1);
+    border-radius: 5px;
+    border:solid 0px rgba(255, 255, 255, 0.9);
+    border-style: outset;
+    outline-color: rgba(252, 192, 58, 1);
+    text-indent: 15px;
+    font-size: 18px;
+    color: rgb(112, 111, 111) !Important;
+    height: 30px;
+    width: 90%;
+    margin-left: 5% !Important;
+    margin-right: 5% !Important;
+    margin-bottom: 1% !Important;
+}
+input[type='number']{
+    background: rgba(255, 239, 216, 1);
+    border-radius: 5px;
+    border:solid 0px rgba(255, 255, 255, 0.9);
+    outline-color: rgba(252, 192, 58, 1);
+    border-style: outset;
+    text-indent: 15px;
+    font-size: 18px;
+    color: rgb(112, 111, 111) !Important;
+    height: 30px;
+    width: 90%;
+    margin-left: 5% !Important;
+    margin-right: 5% !Important;
+    margin-bottom: 1% !Important;
+}
+input[type='email']{
+    background: rgba(255, 239, 216, 1);
+    border-radius: 5px;
+    border:solid 0px rgba(255, 255, 255, 0.9);
+    outline-color: rgba(252, 192, 58, 1);
+    border-style: outset;
+    text-indent: 15px;
+    font-size: 18px;
+    color: rgb(112, 111, 111) !Important;
+    height: 30px;
+    width: 90%;
+    margin-left: 5% !Important;
+    margin-right: 5% !Important;
+    margin-bottom: 1% !Important;
+}
+input[type='textarea']{
+    background: rgba(255, 239, 216, 1);
+    border-radius: 5px;
+    border:solid 0px rgba(255, 255, 255, 0.9);
+    outline-color: rgba(252, 192, 58, 1);
+    border-style: outset;
+    text-indent: 15px;
+    font-size: 18px;
+    color: rgb(112, 111, 111) !Important;
+    height: 60px;
+    width: 90%;
+    margin-left: 5% !Important;
+    margin-right: 5% !Important;
+    margin-bottom: 1% !Important;
+}
+select{
+    background: rgba(255, 239, 216, 1);
+    border-radius: 5px;
+    border:solid 0px rgba(255, 255, 255, 0.9);
+    outline-color: rgba(252, 192, 58, 1);
+    border-style: outset;
+    text-indent: 15px;
+    font-size: 18px;
+    color: rgb(112, 111, 111) !Important;
+    height: 30px;
+    width: 90%;
+    margin-left: 5% !Important;
+    margin-right: 5% !Important;
+    margin-bottom: 1% !Important;
+}
+div.checks{
+    /*background: rgba(255, 239, 216, 1);*/
+    width: 90%;
+    margin-left: 5% !Important;
+    margin-right: 5% !Important;
+    margin-bottom: 1% !Important;
+}
+/* los checkboxes */
+#c1 input:checked ~ .checkmark {
+background-color: rgba(255, 255, 255, 1) !Important;
+border:solid 1px rgba(252, 192, 58, 1) !Important;
+}
+#c2 input:checked ~ .checkmark {
+background-color: rgba(255, 255, 255, 1) !Important;
+border:solid 1px rgba(252, 192, 58, 1) !Important;
+}
+/* Contenedor */
+.container {
+  display: flex;
+  position: relative;
+  padding-left: 20px;    /*este es el espacio entre el check y el texto*/
+  /*margin-bottom: 12px;*/
+  cursor: pointer;
+  font-size: 10px;
+}
+/* escondemos el default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0px;
+  width: 0px;
+}
+/* creamos un custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 14px;
+  width: 14px;
+  background-color: rgba(255, 255, 255, 1) !Important;
+  border:solid 1px rgba(252, 192, 58, 1) !Important;
+}
+/* Al pasar el mouse encima, lo ponemos en color */
+.container:hover input ~ .checkmark {
+  background-color: rgba(252, 192, 58, 1) !Important;
+  border:solid 1px rgba(252, 192, 58, 1) !Important;
+}
+/* creamos el marcador (escondido al no seleccionar) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* mostramos el marcador al seleccionar */
+.container input:checked ~ .checkmark:after {
+  display: block;
+  top: -2px;
+  left: 0;
+}
+/* estilo del marcador cuando se selecciona el check*/
+.container .checkmark:after {
+  left: 9px;
+  top: 1px;
+  width: 8px;
+  height: 13px;
+  border: solid orange;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+input[type='submit']{
+    background-color: rgba(252, 192, 58, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 50px;
+    border: solid 0px rgba(255, 255, 255, 0.9);
+    border-style: outset;
+    text-align: center;
+}

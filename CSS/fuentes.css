@@ -1,0 +1,29 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 9/02/2021, 12:18:12 PM
+    Author     : user
+*/
+@font-face{//esto agrega la fuentes estipulada 
+    font-family: "MyriadPro-Regular";
+    src: url('../FONTS/MyriadPro-Regular.ttf') !Important;
+}
+@font-face{//esto agrega la fuentes estipulada 
+    font-family: "MyriadPro-Bold";
+    src: url('../FONTS/MyriadPro-Bold.ttf') !Important;
+}
+@font-face{//esto agrega la fuentes estipulada 
+    font-family: "MyriadPro-Light";
+    src: url('../FONTS/MyriadPro-Light.ttf') !Important;
+}
+@font-face{//esto agrega la fuentes estipulada 
+    font-family: "MyriadPro-SemiCn_0";
+    src: url('../FONTS/MyriadPro-SemiCn_0.ttf') !Important;
+}
+@font-face{//esto agrega la fuentes estipulada 
+    font-family: "MyriadPro-It";
+    src: url('../FONTS/MyriadPro-It.ttf') !Important;
+}
